@@ -284,3 +284,95 @@ footer{
 }
 
 
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .header{
+    width: auto;
+    position: relative;
+  }
+  span{
+    font-size: 1em;
+  }
+
+  .logo{
+  width: 24%;
+  height: 38px;
+  margin: 8px;
+  }
+  .menus {
+    display: none; /* Hide the menu on small screens */
+  }
+
+  .menu-button {
+    float: right;
+    display: block;
+     /* Display the button on small screens */
+  }
+
+  .menu-wrapper {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #212428;
+    padding: 10px;
+    display: none;
+    z-index: 3;
+  }
+
+  .menus.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-wrapper.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-cards{
+  margin-left: -51px;
+}
+.cards{
+    display: flex;
+    margin: 7%;
+    background-color: #212428;
+    width: 36%;
+}
+.card-second{
+    margin-left: 9%;
+    width: 126%;
+    margin-top: -3%;
+    height: 284px;
+    background-color: #262a2e;
+}
+.contact-card{
+  max-width: 124%;
+  width: 124%;
+  margin-left: 20px;
+  margin-top: 5%;
+}
+.contact-card span,
+.contact-buttons button {
+  font-size: 0.8em; /* Apply the smaller font size to both spans and buttons */
+}
+
+.resume-item{
+  font-size: 1em;
+}
+
+.myExperienceImageOne{
+  display:none
+}
+
+.myExperienceImageSecond{
+  display:none
+}
+.educationImage{
+  display: none;
+}
+
+}
