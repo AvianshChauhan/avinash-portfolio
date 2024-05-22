@@ -1,0 +1,286 @@
+.header{
+  background-color: #212428;
+  color: #c4cfde;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  z-index: 2;
+  width: 100%;
+}
+.menu-wrapper {
+  text-align: right;
+}
+  .menus{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+.menus span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.menus span:hover {
+ color: #fff;
+}
+
+.cards{
+  display: flex;
+  margin:7%;
+  background-color: #212428;
+  max-width:36%;
+}
+
+.container{
+  background-color: #212428;
+  height: auto;
+  width: auto;
+}
+.contact-card{
+  max-width: 36%;
+  margin:7%;
+  margin-top: -72px;
+}
+
+.cards mat-card {
+  background-color: linear-gradient(145deg, #1e2024, #23272b);
+
+  border-radius: 10px;
+  box-shadow: 10px 10px 19px #1c1e22,
+  -10px -10px 19px #262a2e;
+
+}
+
+.cards mat-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-second{
+  margin-left: 54%;
+  width:49%;
+  margin-top: -27%;
+  background-color: #262a2e;
+
+}
+.contact-buttons{
+  display: flex;
+  margin-left: 10px;
+}
+.container-cards{
+   margin-top:0%;
+   padding:100px;
+   margin-left: 100px;
+
+}
+
+.custom-card{
+  background-color: #262a2e;
+  color:#c4cfde;
+}
+
+.logo {
+  width: 66px;
+  height: 60px;
+  border-radius: 50%;
+  margin:38px;
+  border: 2px solid #665d5d;
+
+}
+
+.expierence{
+  background-color: #212428;
+  color:#c4cfde;
+  padding-top:10%;
+  text-align: center;
+}
+
+.expierence-details{
+  background-color: #262a2e;
+  color:#c4cfde;
+  padding-top:10%;
+  text-align: center;
+}
+
+.experience-container {
+  display: flex;
+  align-items: center;
+}
+
+.my-resume-heading{
+  color: #c4cfde;
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.my-resume-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+}
+
+.my-projects-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+.resume-item{
+  display: flex;
+  width: 250px;
+  height: 100px;
+  background-color: #262a2e;
+  color: #c4cfde;
+  font:18px poppins, sans-serif;
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  background-color: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22,
+  -10px -10px 19px #262a2e;
+}
+
+.project-item{
+  display: flex;
+  width: 250px;
+  height: 100px;
+  background-color: #262a2e;
+  color: #c4cfde;
+  font:18px poppins, sans-serif;
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  background-color: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22,
+  -10px -10px 19px #262a2e;
+}
+
+.resume-item:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color:#ff014f;
+  cursor: pointer;
+}
+
+.active-resume-item{
+  color:#ff014f;
+}
+
+.footer-container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #212428;
+  color: #c4cfde;
+  justify-content: center;
+}
+
+footer{
+  display: flex;
+  background-color: #212428;
+  margin-top: 100px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.name {
+  display: inline-block;
+  vertical-align: center;
+  color: #c4cfde;
+  font-size: 20px;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.footer-items{
+  display: flex;
+}
+
+.footer-item1{
+  /* display:flex; */
+  align-items: center;
+
+}
+
+.footer-item2{
+  align-items: center;
+  font-size: 3rem;
+  margin-left: 164px;
+  margin-top: -49px;
+}
+
+.features-container{
+  display:flex;
+  color:#c4cfde;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 90px;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 63%;
+  margin-left: 12%;
+}
+
+.professional-skill{
+  font-size:36px Montserrat sans-serif;
+  width: 82%;
+  margin-left: 18%;
+}
+
+.progress-container {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.progress-bar{
+  background-color: #ff014f;
+}
+.customr-card-title{
+  font-size: 2em;
+  color:#c4cfde
+}
+
+.myExperienceImageOne{
+  background-color: #212428;
+  width:334px;height:130px;
+  margin-top:4%;
+  margin-top:-6%;
+}
+
+.myExperienceImageSecond{
+  background-color: #212428;
+  width:334px;height:130px;
+  margin-top:4%;
+
+}
+
+.educationImage{
+  background-color: #212428;
+  width:334px;height:130px;
+  margin-top:4%;
+  margin-top:-6%;
+}
+
+.projects{
+  background-color: #212428;
+  color:#c4cfde;
+  padding-top:10%;
+  text-align: center;
+}
+
+

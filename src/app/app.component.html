@@ -1,0 +1,446 @@
+<div class="container">
+  <mat-toolbar class="header">
+    <div>
+      <img
+        src="assets/WhatsApp Image 2024-04-06 at 02.16.56-Photoroom.png-Photoroom.png"
+        alt="Logo"
+        class="logo"
+      />
+      <span>Avinash Chauhan</span>
+    </div>
+    <button class="menu-button" (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="menu-wrapper">
+      <div class="menus">
+        <span (click)="scrollToHomeSection()">HOME</span>
+        <span (click)="scrollToExperienceSection()">EXPERIENCE</span>
+        <span (click)="scrollToEducationSection()">EDUCATION</span>
+        <span (click)="scrollToResumeSection()">RESUME</span>
+        <span (click)="scrollToProjectSection()">PROJECTS</span>
+      </div>
+    </div>
+  </mat-toolbar>
+
+  <div class="container-cards" id="home">
+    <div class="cards">
+      <mat-card class="custom-card">
+        <mat-card-content>
+          <mat-card-header
+            ><mat-icon style="color: #ff014f">person</mat-icon></mat-card-header
+          >
+
+          <mat-card-title
+            >Hi, I’m a
+            <span style="color: #ff014f; font-size: 32px"
+              >Software Engineer.</span
+            ></mat-card-title
+          >
+          <mat-card-subtitle style="color: #fff">
+            Web developer and Application Developer With 4 year Experience.
+          </mat-card-subtitle>
+          <mat-card-subtitle>
+            <mat-icon style="color: #ff014f">content_copy</mat-icon>
+            <span style="color: #c4cfde; padding-left: 10px"
+              >Web & App Developer.</span
+            >
+          </mat-card-subtitle>
+          <mat-card-subtitle>
+            <mat-icon style="color: #ff014f">email</mat-icon>
+            <span style="color: #c4cfde; padding-left: 10px">{{
+              emailAddress
+            }}</span>
+          </mat-card-subtitle>
+          <mat-card-subtitle>
+            <mat-icon style="color: #ff014f">address</mat-icon>
+            <span style="color: #c4cfde; padding-left: 10px">India.</span>
+          </mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <mat-card class="card-second">
+      <img
+        src="assets/WhatsApp Image 2024-04-06 at 02.16.56-Photoroom.png-Photoroom.png"
+        style="height: 100%; width: 100%; object-fit: cover"
+      />
+    </mat-card>
+    <div class="contact-card">
+      <mat-card class="custom-card">
+        <mat-card-content>Download my CV and Contact with me:</mat-card-content>
+        <div class="contact-buttons">
+          <button mat-button style="color: #ff014f" (click)="downloadCV()">DOWNLOAD CV</button>
+          <button mat-button style="color: #ff014f"><a  style="color: #ff014f" href="mailto:chauhanavinash878@gmail.com">CONTACT ME</a></button>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <!------------Experience-------------->
+
+  <div id="myExperience">
+    <div>
+      <mat-card class="expierence">
+        <mat-card-content>
+          <p style="color: #ff014f">OVER 4 YEARS OF EXPERIENCE</p>
+          <mat-card-title class="customr-card-title" style="padding-bottom: 2%"
+            >My Experience</mat-card-title
+          >
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div
+      class="experience-container"
+      style="
+        background-color: #212428;
+        margin-top: 4%;
+        border: 2px solid #171616;
+        margin-left: 18%;
+        margin-right: 18%;
+      "
+    >
+      <mat-card class="myExperienceImageOne">
+        <img
+          src="assets/62efdf9840dca733692cdd48_web dev basics-Photoroom.png-Photoroom.png"
+          style="max-height: 434px; width: 83%"
+        />
+      </mat-card>
+      <mat-card
+        class="experience-details"
+        style="background-color: #212428; margin-top: 4%"
+      >
+        <mat-card-content>
+          <mat-card-title class="customr-card-title"
+            >Web Development.</mat-card-title
+          >
+          <h2 style="padding-top: 20px; color: #c4cfde">Working in Angular.</h2>
+          <p style="color: #c4cfde">Working as a Angular developer</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div
+      class="experience-container"
+      style="
+        background-color: #212428;
+        margin-top: 4%;
+        margin-left: 18%;
+        margin-right: 18%;
+        border: 2px solid #171616;
+      "
+    >
+      <mat-card class="myExperienceImageSecond">
+        <img
+          src="assets/app-development-company-in-Ambala-Photoroom.png-Photoroom (1).png"
+          style="max-height: 434px; width: 83%"
+        />
+      </mat-card>
+      <mat-card
+        class="experience-details"
+        style="background-color: #212428; margin-top: 4%"
+      >
+        <mat-card-content>
+          <mat-card-title class="customr-card-title"
+            >App Development.</mat-card-title
+          >
+          <h2 style="padding-top: 20px; color: #c4cfde">
+            Working in Angular/ionic for 2 Years.
+          </h2>
+          <p style="color: #c4cfde">Workin as a Angular/Ionic Developer</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <!------------Education-------------->
+  <div id="education">
+    <div>
+      <mat-card class="expierence">
+        <mat-card-content>
+          <p style="color: #ff014f">B.TECH IN COMPUTER SCIENCE</p>
+          <mat-card-title class="customr-card-title" style="padding-bottom: 2%"
+            >Education</mat-card-title
+          >
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div
+      class="experience-container"
+      style="
+        background-color: #212428;
+        margin-top: 4%;
+        border: 2px solid #171616;
+        margin-left: 18%;
+        margin-right: 18%;
+      "
+    >
+      <mat-card class="educationImage">
+        <img
+          src="assets/images (7).jpg"
+          style="height: 145%; width: 100%; object-fit: cover"
+        />
+      </mat-card>
+      <mat-card
+        class="experience-details"
+        style="background-color: #212428; margin-top: 4%"
+      >
+        <mat-card-content>
+          <mat-card-title class="customr-card-title"
+            >Software Engineer</mat-card-title
+          >
+          <h2 style="padding-top: 20px; color: #c4cfde">
+            Computer Sceince Engineer
+          </h2>
+          <p style="color: #c4cfde">
+            I have Completed my Computer Science Engineering in 2019 From Indo
+            Global Collage (PTU).
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <!------------My Resume-------------->
+  <div id="resume">
+    <div>
+      <h2 class="my-resume-heading">My Resume</h2>
+    </div>
+    <div class="my-resume-container">
+      <div
+        class="resume-item"
+        [ngClass]="{ 'active-resume-item': activeEducation ? true : false }"
+        (click)="active_resume_item('Education')"
+      >
+        Education
+      </div>
+
+      <div
+        class="resume-item"
+        [ngClass]="{ 'active-resume-item': professionalSkill ? true : false }"
+        (click)="active_resume_item('Professional Skils')"
+      >
+        Professional Skils
+      </div>
+
+      <div
+        class="resume-item"
+        [ngClass]="{ 'active-resume-item': experience ? true : false }"
+        (click)="active_resume_item('Experience')"
+      >
+        Experience
+      </div>
+
+      <div
+        class="resume-item"
+        [ngClass]="{ 'active-resume-item': project ? true : false }"
+        (click)="active_resume_item('Projects')"
+      >
+        Projects
+      </div>
+    </div>
+    <div *ngIf="activeEducation">
+      <div>
+        <mat-card class="expierence">
+          <mat-card-content>
+            <p style="color: #ff014f">B.TECH IN COMPUTER SCIENCE</p>
+            <mat-card-title
+              class="customr-card-title"
+              style="padding-bottom: 2%"
+              >Education</mat-card-title
+            >
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div
+        class="experience-container"
+        style="
+          background-color: #212428;
+          margin-top: 4%;
+          border: 2px solid #171616;
+          margin-left: 18%;
+          margin-right: 18%;
+        "
+      >
+        <mat-card
+          style="
+            background-color: #212428;
+            width: 334px;
+            height: 130px;
+            margin-top: 4%;
+            margin-top: -6%;
+          "
+        >
+          <img
+            src="assets/images (7).jpg"
+            style="height: 145%; width: 100%; object-fit: cover"
+          />
+        </mat-card>
+        <mat-card
+          class="experience-details"
+          style="background-color: #212428; margin-top: 4%"
+        >
+          <mat-card-content>
+            <mat-card-title class="customr-card-title"
+              >Software Engineer</mat-card-title
+            >
+            <h2 style="padding-top: 20px; color: #c4cfde">
+              Working in Angular.
+            </h2>
+            <p style="color: #c4cfde">
+              Reinventing the way you create websites
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div *ngIf="professionalSkill" class="features-container">
+      <div class="professional-skill">
+        <span style="color: #ff014f; font-size: 14px">Features</span>
+        <h2>Development Skills</h2>
+        <div *ngFor="let data of progressData" class="progress-container">
+          <div>
+            <span style="color: #c4cfde; font-size: 14px; float: left">{{
+              data.label
+            }}</span>
+            <span style="float: right">{{ data.percentage }}%</span>
+          </div>
+          <mat-progress-bar
+            mode="determinate"
+            [value]="data.percentage"
+            class="progress-bar"
+          ></mat-progress-bar>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div *ngIf="experience">
+        <mat-card class="expierence">
+          <mat-card-content>
+            <p style="color: #ff014f">OVER 4 YEARS OF EXPERIENCE</p>
+            <mat-card-title
+              class="customr-card-title"
+              style="padding-bottom: 2%"
+              >My Experience</mat-card-title
+            >
+          </mat-card-content>
+        </mat-card>
+
+        <div
+          class="experience-container"
+          style="
+            background-color: #212428;
+            margin-top: 4%;
+            border: 2px solid #171616;
+            margin-left: 18%;
+            margin-right: 18%;
+          "
+        >
+          <mat-card
+            style="
+              background-color: #212428;
+              width: 334px;
+              height: 130px;
+              margin-top: 4%;
+              margin-top: -6%;
+            "
+          >
+            <img
+              src="assets/62efdf9840dca733692cdd48_web dev basics-Photoroom.png-Photoroom.png"
+              style="max-height: 434px; width: 83%"
+            />
+          </mat-card>
+          <mat-card
+            class="experience-details"
+            style="background-color: #212428; margin-top: 4%"
+          >
+            <mat-card-content>
+              <mat-card-title class="customr-card-title"
+                >Web Development.</mat-card-title
+              >
+              <h2 style="padding-top: 20px; color: #c4cfde">
+                Working in Angular.
+              </h2>
+              <p style="color: #c4cfde">
+                Reinventing the way you create websites
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div
+          class="experience-container"
+          style="
+            background-color: #212428;
+            margin-top: 4%;
+            margin-left: 18%;
+            margin-right: 18%;
+            border: 2px solid #171616;
+          "
+        >
+          <mat-card
+            style="
+              background-color: #212428;
+              width: 334px;
+              height: 130px;
+              margin-top: 4%;
+            "
+          >
+            <img
+              src="assets/app-development-company-in-Ambala-Photoroom.png-Photoroom (1).png"
+              style="max-height: 434px; width: 83%"
+            />
+          </mat-card>
+          <mat-card
+            class="experience-details"
+            style="background-color: #212428; margin-top: 4%"
+          >
+            <mat-card-content>
+              <mat-card-title class="customr-card-title"
+                >App Development.</mat-card-title
+              >
+              <h2 style="padding-top: 20px; color: #c4cfde">
+                Working in Angular/ionic.
+              </h2>
+              <p style="color: #c4cfde">
+                Reinventing the way you create websites
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+
+    <div></div>
+    <mat-card class="projects">
+      <mat-card-content>
+        <p style="color: #ff014f">Projects</p>
+        <mat-card-title class="customr-card-title" style="padding-bottom: 2%"
+          >Live Projetcs</mat-card-title
+        >
+      </mat-card-content>
+
+      <div class="my-projects-container">
+        <div class="project-item" (click)="open_project('agrikheti')">
+          <span>Agrikheti</span>
+          <p>
+        </div>
+        <div class="project-item" (click)="open_project('Falcon Ticketing System')">
+          Falcon Ticketing System
+        </div>
+        <div class="project-item" (click)="open_project('nta policy')">
+          NTA POLICY
+        </div>
+      </div>
+    </mat-card>
+    <!-- <hr style="border: none; border-top: 1px solid black; margin-top: 6%" /> -->
+
+    <div class="footer-container">
+      <div class="footer-items">
+        <div class="footer-item1">
+          <img
+            src="assets/WhatsApp Image 2024-04-06 at 02.16.56-Photoroom.png-Photoroom.png"
+            alt="Logo"
+            class="logo"
+          />
+          <span class="name">Avinash Chauhan</span><br />
+          <i class="fab fa-linkedin footer-item2" (click)="openLinkedIn()"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
