@@ -90,7 +90,7 @@ export class AppComponent implements OnInit {
   }
 
   scrollToProjectSection(){
-    const myExperienceElement = document.getElementById('project');
+    const myExperienceElement = document.getElementById('projects');
     if (myExperienceElement) {
       myExperienceElement.scrollIntoView({ behavior: 'smooth' });
     }

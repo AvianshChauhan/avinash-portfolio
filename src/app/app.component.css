@@ -344,13 +344,13 @@ footer{
 }
 .card-second{
     margin-left: 9%;
-    width: 126%;
+    width: 112%;
     margin-top: -3%;
     height: 284px;
     background-color: #262a2e;
 }
 .contact-card{
-  max-width: 124%;
+  max-width: 112%;
   width: 124%;
   margin-left: 20px;
   margin-top: 5%;
@@ -376,3 +376,50 @@ footer{
 }
 
 }
+
+@keyframes moveLeftToRight {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes changeColor {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: green; }
+}
+
+@keyframes pulsate {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.move-text {
+  animation: moveLeftToRight 10s linear infinite, changeColor 5s infinite alternate, pulsate 2s ease-in-out infinite;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.animated-card {
+  animation: bounceScale 2s ease-out forwards;
+}
+
+@keyframes bounceScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-45deg);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2) rotate(45deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+
+
