@@ -377,6 +377,11 @@ footer{
 
 }
 
+@keyframes moveLeftToRight {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
 @keyframes changeColor {
   0% { color: red; }
   50% { color: blue; }
@@ -390,7 +395,7 @@ footer{
 }
 
 .move-text {
-  animation: moveLeftToRight 10s linear infinite, changeColor 5s infinite alternate, pulsate 2s ease-in-out infinite;
+  animation: changeColor 5s infinite alternate, pulsate 2s ease-in-out infinite;
   font-size: 18px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
