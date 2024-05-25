@@ -377,11 +377,6 @@ footer{
 
 }
 
-@keyframes moveLeftToRight {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
 @keyframes changeColor {
   0% { color: red; }
   50% { color: blue; }
